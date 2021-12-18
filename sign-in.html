@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="sign-in.css">
+</head>
+
+<body>
+
+    <div class="Sign-in-box" id="box">
+        <h1>Sign-In</h1>
+
+        <form action="" class="loginform">
+
+
+            <label for="">Email</label>
+            <input type="email" placeholder="Email" id="email">
+
+            <label for="">Password</label>
+            <input type="password" placeholder="Password" id="password">
+
+            <input type="button" value="Submit" id="btn">
+        </form>
+        <p>By Clicking the Sign in Button, You agree to our <br>
+            <a href="">Tearms and Condition</a> and
+            <a href="">Privacy Policy</a>
+
+            <p class="para-2">Don't Have Account?
+                <a href="sign-up.html">Sign-up </a>
+            </p>
+    </div>
+</body>
+
+</html>
+<script>
+    document.getElementById("btn").addEventListener("click", signin);
+
+    function signin() {
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("password").value;
+
+        console.log(email, pass);
+
+        var allUsers = JSON.parse(localStorage.getItem("allUsers"));
+        console.log(allUsers);
+
+
+        var flag = true;
+
+        for (var i = 0; i < allUsers.length; i++) {
+            if (email == allUsers[i].email && pass == allUsers[i].pass) {
+                window.location.href = "landingpage.html"
+                flag = false;
+                var name = allUsers[i].name;
+                localStorage.setItem("username", JSON.stringify(name))
+            }
+        }
+        if (flag) {
+            alert("Invalid Credential")
+        }
+    }
+</script>

@@ -1,0 +1,232 @@
+body {
+    font-family: "Avenir Medium", sans-serif;
+    background-color: #fdfdf9;
+}
+
+.top {
+    height: 10px;
+    background-color: brown;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    background-color: #fdfdf9;
+    width: 87%;
+    /* border: 1px solid red; */
+    position: sticky;
+    top: 0;
+    margin-left: 6.5%;
+    margin-top: 0%;
+}
+
+.signin-up {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 15px;
+    margin-left: 88%;
+    margin-bottom: -2.2%;
+    font-size: 15px;
+}
+
+#material-icons3 {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.search-box {
+    /* border: 1px solid red; */
+    padding-top: 10px;
+}
+
+.site-heading {
+    /* border: 1px solid red; */
+    margin: auto;
+    text-align: center;
+    color: indianred;
+    margin-left: 38%;
+    font-stretch: ultra-expanded;
+}
+
+#site-heading {
+    /* border: 1px solid rgba(0, 255, 85, 0.61); */
+    display: flex;
+    padding: 1%;
+    gap: 5px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#site-heading>img {
+    /* border: 1px solid rgba(0, 255, 85, 0.61); */
+    width: 20%;
+    padding: 1%;
+    margin-top: 1%;
+    margin-left: 38%;
+    margin-right: 12%;
+    height: 80%;
+}
+
+#serchbox {
+    vertical-align: top;
+    height: 30px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding-bottom: 0%;
+}
+
+#material-icons1 {
+    margin-top: 15px;
+}
+
+#material-icons2 {
+    margin-top: 5px;
+}
+
+.cart {
+    display: flex;
+}
+
+.cart>p {
+    color: red;
+    font-weight: bolder;
+    margin-top: 7px;
+    margin-left: -7px;
+}
+
+.material-icons {
+    height: 40px;
+}
+
+.catogory-list {
+    display: flex;
+    list-style-type: none;
+    font-size: 19px;
+    gap: 2.5%;
+    padding: 0% 1%;
+    margin-left: 6%;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    font-weight: 400;
+}
+
+.lasthr {
+    margin: 0px;
+    border: 0.5px solid rgba(236, 232, 232, 0.753);
+    margin-left: -20%;
+    margin-right: -20%;
+}
+
+.signin-up-hr {
+    margin: 0px;
+    padding: 0%;
+    margin-top: -10px;
+}
+
+.catogory-list>li {
+    /* border: 1px solid red; */
+    padding-top: 0px;
+    margin-top: 5px;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.catogory-list>li:hover {
+    color: green;
+    border-bottom: 2px solid black;
+    padding-bottom: 11px;
+}
+
+.lasthr {
+    margin: 0%;
+    padding-top: 0%;
+    margin-top: -1.5%;
+    border: 0.5px solid rgba(236, 232, 232, 0.753);
+    margin-left: -20%;
+    margin-right: -20%;
+    margin-bottom: 1%;
+}
+
+.sub-menu-1 {
+    display: none;
+    margin-left: -4%;
+    padding-left: 0%;
+}
+
+.sub-menu-1>ul>li {
+    list-style-type: none;
+    color: black;
+}
+
+.catogory-list>li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    display: flex;
+    background-color: #fdfdf9;
+    padding-top: 20px;
+    /* margin-left: -15px; */
+}
+
+.catogory-list>li:hover .sub-menu-1 ul {
+    display: block;
+    padding-left: 10px;
+}
+
+.catogory-list>li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 13px 0px;
+    /* padding-bottom: 13px; */
+    border-bottom: 1px dotted rgb(143, 136, 136);
+    background: #fdfdf9;
+    text-align: left;
+    /* margin-right: 1%; */
+}
+
+.catogory-list>li:hover .sub-menu-1 ul li a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.sub-menu-2 {
+    display: none;
+    margin-left: -14%;
+}
+
+.sub-menu-2>ul>li {
+    list-style-type: none;
+    color: black;
+}
+
+.catogory-list>li:hover .sub-menu-2 {
+    display: block;
+    position: absolute;
+    display: flex;
+    background-color: #fdfdf9;
+    padding-top: 20px;
+    /* margin-left: -15px; */
+    gap: 0%;
+}
+
+.catogory-list>li:hover .sub-menu-2 ul {
+    display: block;
+    /* margin: 10px; */
+}
+
+.catogory-list>li:hover .sub-menu-2 ul li {
+    /* width: 200px; */
+    padding: 10px;
+    /* border-bottom: 1px dotted rgb(143, 136, 136); */
+    background: #fdfdf9;
+    text-align: left;
+    /* margin-right: 1%; */
+}
+
+.catogory-list>li:hover .sub-menu-2 ul li a:hover {
+    color: green;
+    text-decoration: underline;
+}

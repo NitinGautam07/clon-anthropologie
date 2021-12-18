@@ -1,0 +1,153 @@
+    body {
+        background-color: #f8f8fa;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .container {
+        /* border: 1px solid red; */
+        width: 85%;
+        margin: auto;
+        display: flex;
+        gap: 1%;
+    }
+    
+    .left {
+        /* border: 1px solid red; */
+        width: 18%;
+    }
+    
+    .left-head>p {
+        margin-left: 10px;
+    }
+    
+    .filterbox-1>p {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    
+    .filterbox-1 ul li {
+        list-style-type: none;
+        text-align: left;
+        font-size: 13px;
+        margin: 6% 0%;
+    }
+    
+    .filterbox-1 ul li :hover {
+        color: green;
+        text-decoration: underline;
+    }
+    
+    .right {
+        /* border: 1px solid red; */
+        width: 81%;
+    }
+    
+    .left-head-div {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1%;
+    }
+    
+    .left-head-div>div {
+        /* border: 1px solid rgb(0, 60, 255); */
+        display: flex;
+        gap: 2%;
+        width: 35%;
+    }
+    
+    .left-head-div>div>h2 {
+        font-size: 22px;
+        font-weight: 400;
+        margin: 1%;
+    }
+    
+    .left-head-div>div>p {
+        font-size: 13px;
+        color: gray;
+    }
+    
+    #sort {
+        /* border: 1px solid red; */
+        height: 30px;
+        margin-top: 2%;
+        align-items: right;
+    }
+    
+    .sortby {
+        text-align: right;
+    }
+    
+    .jacket-info {
+        /* border: 1px solid rgb(0, 47, 255); */
+        width: 86%;
+        margin: auto;
+    }
+    
+    .jacket-info>h2 {
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    .jacket-info>p {
+        font-weight: 400;
+        font-size: 12px;
+    }
+    
+    .jacket-info>a {
+        text-decoration: underline;
+    }
+    /* maping started Hear */
+    
+    #image {
+        width: 100%;
+        margin-bottom: 0%;
+    }
+    
+    #mainDiv {
+        margin-bottom: 21%;
+        cursor: pointer;
+    }
+    
+    #product {
+        /* border: 1px solid rgb(0, 47, 255); */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* gap: 2%; */
+        grid-column-gap: 2%;
+    }
+    
+    #name {
+        margin-top: 0%;
+        margin-bottom: 1%;
+        font-size: 13px;
+    }
+    
+    #price-div,
+    #time,
+    #cutP,
+    #price {
+        font-size: 14px;
+        margin: 1% 0%;
+    }
+    
+    #price_div {
+        display: flex;
+        gap: 6%;
+    }
+    
+    #cutP {
+        color: black;
+        text-decoration: line-through;
+    }
+    
+    #time,
+    #price {
+        color: gray;
+    }

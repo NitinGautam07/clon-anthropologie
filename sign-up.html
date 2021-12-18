@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign-up.css">
+    <title>Sign-Up</title>
+</head>
+
+<body>
+
+    <div class="Sign-up-box" id="box">
+        <h1>Sign-Up</h1>
+        <h4>Its free and only take a minute</h4>
+        <form action="" class="loginform">
+            <label for="">First Name</label>
+            <input type="text" placeholder="First" id="name">
+
+            <label for="">Last Name</label>
+            <input type="text" placeholder="Last" id="last">
+
+            <label for="">Email</label>
+            <input type="email" placeholder="Email" id="sha">
+
+            <label for="">Password</label>
+            <input type="password" placeholder="Password" id="password">
+
+            <input id="un" type="button" value="Create an Account" />
+        </form>
+        <p>By Clicking the Sign Up Button, You agree to our <br>
+            <a href="">Tearms and Condition</a> and
+            <a href="">Privacy Policy</a>
+
+        </p>
+    </div>
+    <p class="para-2">Alredy Have Account?
+        <a href="sign-in.html" id="login">Sign-In </a>
+    </p>
+
+
+</body>
+
+</html>
+<script>
+    document.getElementById("login").addEventListener("click", login)
+
+    function login() {
+        window.location.href = "sign-in.html"
+    }
+
+    var allUsers = JSON.parse(localStorage.getItem("allUsers")) || [];
+
+    document.getElementById("un").addEventListener("click", signup);
+
+    function signup() {
+        var name = document.getElementById("name").value;
+        var Lname = document.getElementById("last").value;
+        var email = document.getElementById("sha").value;
+        var pass = document.getElementById("password").value;
+
+        console.log(name, email, pass, );
+
+        var user = {
+            name: name,
+            Lname: last,
+            email: email,
+            pass: pass
+        }
+        if (email !== "" || pass !== "") {
+            allUsers.push(user);
+            localStorage.setItem("allUsers", JSON.stringify(allUsers));
+            alert("Account Created SuccessFully Now Click on Sign In")
+        } else {
+            alert("Enter Email or Password Properly")
+        }
+
+    }
+</script>
